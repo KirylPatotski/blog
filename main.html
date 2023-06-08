@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <style>
+    :root {
+      /* Default light mode colors */
+      --bg-color: white;
+      --text-color: black;
+      --font-family: Calibri, Arial, sans-serif;
+    }
+
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        /* Dark mode colors */
+        --bg-color: black;
+        --text-color: white;
+      }
+    }
+
+    body {
+      /* Set the background color, text color, and font type */
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-family);
+    }
+  </style>
+</head>
+<body>
+  <h1>My Blog</h1>
+
+  <h2>Subheading 1</h2>
+  <p>Paragraph 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <h2>Subheading 2</h2>
+  <p>Paragraph 2. Sed a lectus in elit sagittis placerat. Vivamus vitae massa nec ante accumsan tristique.</p>
+
+  <h2>Subheading 3</h2>
+  <p>Paragraph 3. Phasellus sed est justo. Curabitur maximus, risus sed malesuada aliquam, quam urna vulputate velit, eget feugiat ex lorem in justo.</p>
+</body>
+</html>
