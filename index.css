@@ -134,3 +134,11 @@ li:hover a span {
   margin-top: 1px;
   color: #666;
 }
+
+a.yellow {
+  color: #FFC400;
+}
+
+a.green {
+  color: green;
+}

@@ -83,3 +83,17 @@ li {
     font-size: calc(var(--base-font-size) + 1px);
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  padding-top: 0%; /* 4:3 aspect ratio (75% = 3/4) */
+  border-radius: 1px;
+  padding: 1px;
+}
