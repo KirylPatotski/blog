@@ -24,20 +24,27 @@ body {
   align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: calc(var(--base-font-size) + 8px);
   font-weight: bold;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
 
-p, i {
+p,
+i {
   font-size: calc(var(--base-font-size) + 2px);
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 1.5em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -70,16 +77,60 @@ li {
 }
 
 @media (max-width: 767px) {
+
   /* Adjust font sizes for mobile devices */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: calc(var(--base-font-size) + 4px);
   }
-  
-  p, i {
+
+  p,
+  i {
     font-size: calc(var(--base-font-size) + 1px);
   }
-  
+
   li {
     font-size: calc(var(--base-font-size) + 1px);
   }
+}
+
+a {
+  color: #2196F3;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+a:hover {
+  background-color: #F5F5F5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  padding: 3px;
+  border-bottom: 1px solid #ccc;
+}
+
+a span {
+  display: none;
+  font-size: 14px;
+}
+
+li:hover a span {
+  display: block;
+  margin-top: 1px;
+  color: #666;
 }
