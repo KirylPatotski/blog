@@ -108,6 +108,10 @@ a {
   box-sizing: border-box;
 }
 
+p.blue {
+  color: #2196F3;
+}
+
 a:hover {
   background-color: #F5F5F5;
 }
@@ -139,6 +143,15 @@ a.yellow {
   color: #FFC400;
 }
 
+p.yellow {
+  color: #FFC400;
+}
+
 a.green {
   color: green;
 }
+
+p.green {
+  color: green;
+}
+
