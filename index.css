@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 h1,
@@ -143,15 +144,14 @@ a.yellow {
   color: #FFC400;
 }
 
-p.yellow {
-  color: #FFC400;
+a.light_blue {
+  color: lightblue;
 }
 
 a.green {
   color: green;
 }
 
-p.green {
-  color: green;
-}
+ 
+
 
