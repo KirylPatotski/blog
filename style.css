@@ -76,11 +76,11 @@ li {
   }
   
   p, i {
-    font-size: calc(var(--base-font-size) + 1px);
+    font-size: calc(var(--base-font-size) + 4px);
   }
   
   li {
-    font-size: calc(var(--base-font-size) + 1px);
+    font-size: calc(var(--base-font-size) + 4px);
   }
 
   body {
