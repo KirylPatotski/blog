@@ -70,8 +70,7 @@ li {
   border-radius: 1px;
 }
 
-@media (max-width: 767px) {
-  /* Adjust font sizes for mobile devices */
+@media (max-width: 1081px) { 
   h1, h2, h3, h4, h5, h6 {
     font-size: calc(var(--base-font-size) + 4px);
   }
@@ -83,8 +82,14 @@ li {
   li {
     font-size: calc(var(--base-font-size) + 1px);
   }
-}
 
+  body {
+    max-width: none;  
+    margin: 16px;  
+    padding: 0.5cm;  
+  }
+}
+  
 .container {
   display: flex;
   flex-direction: column;
