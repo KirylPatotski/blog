@@ -99,10 +99,25 @@ li {
 .item img {
   width: 100%;
   height: auto;
-  padding-top: 0%; /* 4:3 aspect ratio (75% = 3/4) */
-  border-radius: 1px;
+  padding-top: 0%;  
+  border-radius: 3px;
   padding: 1px;
 }
+
+.gallery img {
+  display: inline-block;
+  width: 24%;  
+  height: auto;
+  padding-top: 0;  
+  border-radius: 1px;
+  padding: 1px;
+}*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
 .tooltip {
   position: absolute;
   background-color: black;
