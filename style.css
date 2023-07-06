@@ -111,12 +111,29 @@ li {
   padding-top: 0;  
   border-radius: 1px;
   padding: 1px;
-}*/
+}
+ 
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
 }
+ 
+
+.big_gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big_gallery img {
+  display: inline-block;
+  width: 49%;  
+  height: auto;
+  padding-top: 0;  
+  border-radius: 1px;
+  padding: 1px;
+}
+
  
 .tooltip {
   position: absolute;
