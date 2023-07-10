@@ -1,0 +1,150 @@
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --font-family: Calibri, Arial, sans-serif;
+  --base-font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: black;
+    --text-color: white;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  max-width: 14cm;
+  margin: 0 auto;
+  padding: 0 1cm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: calc(var(--base-font-size) + 8px);
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p, i {
+  font-size: calc(var(--base-font-size) + 2px);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ol, ul {
+  padding-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+li {
+  font-size: calc(var(--base-font-size) + 2px);
+  line-height: 1.4;
+}
+
+#progress-bar {
+  height: 7.5px;
+  background-color: #ccc;
+  width: 100%;
+  max-width: 14cm;
+  position: fixed;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+#progress-bar-progress {
+  height: 100%;
+  width: 0;
+  background-color: #FFC400;
+  border-radius: 1px;
+}
+
+@media (max-width: 1081px) { 
+  h1, h2, h3, h4, h5, h6 {
+    font-size: calc(var(--base-font-size) + 4px);
+  }
+  
+  p, i {
+    font-size: calc(var(--base-font-size) + 4px);
+  }
+  
+  li {
+    font-size: calc(var(--base-font-size) + 4px);
+  }
+
+  body {
+    max-width: none;  
+    margin: 16px;  
+    padding: 0.5cm;  
+  }
+}
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  padding-top: 0%;  
+  border-radius: 3px;
+  padding: 1px;
+}
+
+.gallery img {
+  display: inline-block;
+  width: 24%;  
+  height: auto;
+  padding-top: 0;  
+  border-radius: 1px;
+  padding: 1px;
+}
+ 
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+
+.big_gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big_gallery img {
+  display: inline-block;
+  width: 49%;  
+  height: auto;
+  padding-top: 0;  
+  border-radius: 1px;
+  padding: 1px;
+}
+
+ 
+.tooltip {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 2px;
+  border-radius: 1px;
+  z-index: 1;
+  margin-top: -20px; 
+}
+
+.item:hover .tooltip {
+  visibility: visible;
+}

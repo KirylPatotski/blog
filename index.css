@@ -1,0 +1,157 @@
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --font-family: Calibri, Arial, sans-serif;
+  --base-font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: black;
+    --text-color: white;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  max-width: 14cm;
+  margin: 0 auto;
+  padding: 0 1cm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: calc(var(--base-font-size) + 8px);
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p,
+i {
+  font-size: calc(var(--base-font-size) + 2px);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ol,
+ul {
+  padding-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+li {
+  font-size: calc(var(--base-font-size) + 2px);
+  line-height: 1.4;
+}
+
+#progress-bar {
+  height: 7.5px;
+  background-color: #ccc;
+  width: 100%;
+  max-width: 14cm;
+  position: fixed;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+#progress-bar-progress {
+  height: 100%;
+  width: 0;
+  background-color: #FFC400;
+  border-radius: 1px;
+}
+
+@media (max-width: 767px) {
+
+  /* Adjust font sizes for mobile devices */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: calc(var(--base-font-size) + 4px);
+  }
+
+  p,
+  i {
+    font-size: calc(var(--base-font-size) + 1px);
+  }
+
+  li {
+    font-size: calc(var(--base-font-size) + 1px);
+  }
+}
+
+a {
+  color: #2196F3;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+p.blue {
+  color: #2196F3;
+}
+
+a:hover {
+  background-color: #F5F5F5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  padding: 3px;
+  border-bottom: 1px solid #ccc;
+}
+
+a span {
+  display: none;
+  font-size: 14px;
+}
+
+li:hover a span {
+  display: block;
+  margin-top: 1px;
+  color: #666;
+}
+
+a.yellow {
+  color: #FFC400;
+}
+
+a.light_blue {
+  color: lightblue;
+}
+
+a.green {
+  color: green;
+}
+
+ 
+
+
