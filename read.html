@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Improve your reading speed with our online speed reading tool. Read faster and comprehend better.">
+    <meta name="keywords" content="speed reading, reading tool, improve reading speed, online reading, read faster">
+    <title>Read Faster - Speed Reading Tool</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="read/read.css">
+    <meta property='og:image' content='https://kirylpatotski.github.io/blog/picture.jpg' />
+</head>
+
+<body>
+
+    <h1 id="displayText" class="displayText">Swipe down to enter the text</h1>
+
+    <div class="container">
+        <div class="tabs">
+            <button id="backButton" class="tab-button">- 5</button>
+            <button id="startButton" class="tab-button">Start (Space)</button>
+            <button id="pauseButton" class="tab-button">Pause</button>
+            <button id="forwardButton" class="tab-button">10 +</button>
+        </div>
+
+        <input type="range" id="speedSlider" class="progress" min="50" max="600" value="250">
+
+        <button id="breakToggle" class="break-button">Toggle Paragraph Breaks (B) </button>
+
+    </div>
+
+    
+    
+    <p>Reading Speed: <span id="readingSpeedValue">250</span> words per minute <br>Word Count: <span id="wordCountValue">0</span> <br>Reading time <span id="readingTimeValue">0</span></p>
+
+    <textarea id="textInput" class="auto-resize" placeholder="Enter text here..."></textarea>
+
+    <p>Improve your reading speed and comprehension with our online speed reading tool. Adjust the reading speed, start
+        and pause reading, and navigate through the text easily! <br> By seeing a single word at a time, you can focus
+        better
+        and avoid wasted time between words, leading to enhanced reading efficiency and understanding.</p>
+
+    <p>By Kiryl Patotski</p>
+    <script src="read/read.js"></script>
+</body>
+
+</html>
