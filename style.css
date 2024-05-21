@@ -1,4 +1,4 @@
-:root {
+:root { */
   --bg-color: white;
   --text-color: black;
   --font-family: Times New Roman, 'Times New Roman', Times, serif, sans-serif, Arial;
@@ -12,6 +12,8 @@
     --text-color: white;
   }
 }
+  
+
 
 body {
   background-color: var(--bg-color);
