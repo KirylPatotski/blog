@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: var(--bg-color);  
+  background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-family);
   max-width: 14cm;
@@ -46,7 +46,7 @@ summary {
   width: 100%;
 }
 
- 
+
 p,
 summary,
 i {
@@ -54,7 +54,7 @@ i {
   font-size: calc(var(--base-font-size) + 2px);
   margin-top: 1em;
   margin-bottom: 1em;
-  text-align: justify;
+  text-align: left;
 }
 
 ol,
@@ -185,30 +185,35 @@ a {
 
 
 .hidden-content {
-  display: none;  
+  display: none;
 }
- 
-.tabs {  
+
+.tabs {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 10px 0; 
+  margin: 10px 0;
 }
 
 .tab-button {
-  flex: 1; /* Make the tab match the parent width */
-  padding: 10px 0; /* Adjust padding */
-  text-align: center; /* Center the text */
+  flex: 1;
+  /* Make the tab match the parent width */
+  padding: 10px 0;
+  /* Adjust padding */
+  text-align: center;
+  /* Center the text */
   background-color: #f1f1f1;
   border: none;
-  cursor: pointer; 
-  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer;
+  border-radius: 5px;
+  /* Add rounded corners */
   transition: background-color 0.3s;
-  margin: 0 5px; /* Add margin to each tab */
+  margin: 0 5px;
+  /* Add margin to each tab */
 }
 
 .tab-button:hover {
-  background-color: #F5F5F5;  
+  background-color: #F5F5F5;
 }
 
 .tab-button.active {
@@ -221,27 +226,26 @@ a {
   background-color: #ffffff26;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;  
-  text-align: justify; 
+  overflow: hidden;
+  text-align: justify;
 }
- 
+
 .card-content {
-  padding: 10px;  
+  padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
   font-size: calc(var(--base-font-size) + 2px);
-} 
+}
 
 .chip {
   display: inline-block;
-  padding: 0 10px; 
+  padding: 0 10px;
   height: 50px;
   line-height: 50px;
-  text-align: center; 
+  text-align: center;
   border-radius: 5px;
   background-color: #ffffff26;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 2px;
   font-size: calc(var(--base-font-size) + 2px);
-} 
-
+}
