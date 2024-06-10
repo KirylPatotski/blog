@@ -1,0 +1,22 @@
+
+  <div class="card">
+    <div class="card-content"
+      style="background-image: url('https://kiryl-web.github.io/blog/images/october_23/10.JPG'); background-size: cover; background-position: center; padding: 20px;">
+ 
+ 
+      <p style="text-align: center; color: white;">
+        <br><br> <br><br><em>
+          <span style="background-color: #000000c3;"> Uncompromising excellence </span><br>
+          <span style="background-color: #000000c3;"> in any realm of human endeavor </span><br>
+          <span style="background-color: #000000c3;"> is a true testament to the indomitability </span><br>
+          <span style="background-color: #000000c3;"> of my spirit. </span>
+        </em><br><br>
+        <span style="background-color: #000000c3;;">June 9th 2024,</span><br><span
+          style="background-color: #000000c3;">Kiryl P.</span>
+      </p>
+    
+
+
+      <!-- These two bottom divs should be left alone-->
+    </div>
+  </div>
