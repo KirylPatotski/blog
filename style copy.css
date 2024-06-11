@@ -2,7 +2,7 @@
   --bg-color: white;
   --text-color: black;
   --font-family: Times New Roman, 'Times New Roman', Times, serif, sans-serif, Arial;
-  --base-font-size: 12pt;
+  --base-font-size: 16px;
 }
 
 
@@ -36,7 +36,7 @@ h5,
 h6,
 details,
 summary {
-  font-size: calc(var(--base-font-size) + 8pt);
+  font-size: calc(var(--base-font-size) + 8px);
   font-weight: bold;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -53,7 +53,7 @@ p,
 summary,
 i {
   width: 100%;
-  font-size: calc(var(--base-font-size) + 2pt);
+  font-size: calc(var(--base-font-size) + 2px);
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: left;
@@ -68,7 +68,7 @@ ul {
 }
 
 li {
-  font-size: calc(var(--base-font-size) + 2pt);
+  font-size: calc(var(--base-font-size) + 2px);
   line-height: 1.4;
 
 }
@@ -106,16 +106,16 @@ a {
   h4,
   h5,
   h6 {
-    font-size: calc(var(--base-font-size) + 8pt);
+    font-size: calc(var(--base-font-size) + 8px);
   }
 
   p,
   i {
-    font-size: calc(var(--base-font-size) + 2pt);
+    font-size: calc(var(--base-font-size) + 6px);
   }
 
   li {
-    font-size: calc(var(--base-font-size) + 2pt);
+    font-size: calc(var(--base-font-size) + 6px);
   }
 
   body {
@@ -237,7 +237,7 @@ a {
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: calc(var(--base-font-size) + 2pt);
+  font-size: calc(var(--base-font-size) + 2px);
 }
 
 .chip {
@@ -250,5 +250,5 @@ a {
   background-color: #ffffff26;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 2px;
-  font-size: calc(var(--base-font-size) + 2pt);
+  font-size: calc(var(--base-font-size) + 2px);
 }
