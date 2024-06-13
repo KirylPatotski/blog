@@ -250,5 +250,46 @@ a {
   background-color: #ffffff26;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 2px;
-  font-size: calc(var(--base-font-size) + 2pt);
+  font-size: calc(var(--base-font-size) - 0pt);
+}
+
+
+#expandable {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  cursor: pointer;
+}
+
+#expandable.expanded {
+  height: auto;
+}
+
+#expandable .more-indicator {
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%); 
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+#expandable.collapsed .more-indicator {
+  display: block;
+}
+
+#expandable:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  display: none;
+}
+
+#expandable.collapsed:after {
+  display: block;
 }

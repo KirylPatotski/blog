@@ -1,0 +1,77 @@
+
+  <script>
+    const categoryButtons = document.querySelectorAll(".tab-button");
+    const blogPosts = document.querySelectorAll(".blog-post > li");
+
+    function updateTabCounts() {
+      const tabCounts = {};
+
+      blogPosts.forEach(post => {
+        const postCategory = post.querySelector("a").classList;
+
+        for (const category of postCategory) {
+          if (tabCounts[category] === undefined) {
+            tabCounts[category] = 1;
+          } else {
+            tabCounts[category]++;
+          }
+        }
+      });
+
+      categoryButtons.forEach(button => {
+        const category = button.getAttribute("data-category");
+        const countSpan = button.querySelector(".tab-count");
+
+        if (countSpan) {
+          countSpan.textContent = `(${tabCounts[category] || 0})`;
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const activeCategory = urlParams.get('active');
+
+      if (activeCategory) {
+        activateButton(activeCategory);
+      }
+
+      categoryButtons.forEach(button => {
+        button.addEventListener("click", function () {
+          categoryButtons.forEach(btn => {
+            btn.classList.remove("active");
+          });
+
+          button.classList.add("active");
+
+          const selectedCategory = button.getAttribute("data-category");
+
+          blogPosts.forEach(post => {
+            const postCategory = post.querySelector("a").classList;
+
+            if (selectedCategory === "all" || postCategory.contains(selectedCategory)) {
+              post.style.display = "block";
+            } else {
+              post.style.display = "none";
+            }
+          });
+
+          updateTabCounts();
+        });
+      });
+
+      updateTabCounts();
+    });
+
+  </script>
+ 
+  <div class="tabs">
+    <button class="tab-button active" data-category="all">All </button>
+    <button class="tab-button" data-category="yellow">Photos <span class="tab-count"></span></button>
+    <button class="tab-button" data-category="green">Life-changing <span class="tab-count"></span></button>
+  </div>
+
+
+
+  
