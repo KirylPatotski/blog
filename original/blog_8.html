@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Birthday Calculator</title>
+  <style>
+    .container {
+      margin: 0 auto;
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .input-group {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .input-group label {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .input-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .input-group input {
+      flex-grow: 1;
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-left: 5px;
+    }
+
+    .result {
+      font-size: 18px;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
+    .result span {
+      color: blue;
+    }
+  </style>
+
+  <title>Life is finite</title>
+  <link rel="stylesheet" href="style.css">
+  <meta property='og:image' content='https://kiryl-web.github.io/blog/picture.jpg'/>
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <meta name="description" content="Calculate how many days you lived, and what percentage of your life that is.">
+</head>
+
+<body>
+
+  <h1><span color=#FFC400>Calculate how much time you have lived</span></h1>
+
+  <div class="container">
+    <div class="input-group">
+      <label for="birthday">Enter your birthday:</label>
+      <div class="input-container">
+        <input type="date" id="birthday" required>
+        <button onclick="calculate()">Calculate</button>
+      </div>
+    </div>
+    <div class="result" id="result"></div>
+  </div>
+
+  <p>A 80 year life expectancy is assumed</p>
+
+  <p>Remember that your life is finite and take action today. Is there something that you always wanted to do, but
+    hesitated too much? Is there something you would regret not doing.</p>
+  <script>
+    function calculate() {
+      var birthday = document.getElementById('birthday').value;
+      var birthDate = new Date(birthday);
+      var currentDate = new Date();
+      var totalLifeMilliseconds = currentDate - birthDate;
+      var totalLifeDays = Math.floor(totalLifeMilliseconds / (1000 * 60 * 60 * 24));
+      var totalLifeYears = totalLifeDays / 365.25;
+      var percentageLived = ((totalLifeYears / 80) * 100).toFixed(3) + '%';
+
+      var resultElement = document.getElementById('result');
+      resultElement.innerHTML = 'You have lived <span>' + percentageLived + '</span> of your life. (' + totalLifeDays + ' days)';
+    }
+  </script>
+</body>
+
+</html>
