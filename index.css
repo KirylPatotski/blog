@@ -15,6 +15,7 @@ ol {
 li {
   padding: 3px;
   border-bottom: 1px solid #ccc; 
+  line-height: 1.4;
 }
 
 
