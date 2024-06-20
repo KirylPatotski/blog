@@ -36,7 +36,7 @@ h5,
 h6,
 details,
 summary {
-  font-size: calc(var(--base-font-size) + 8pt);
+  font-size: calc(12pt + 8pt);
   font-weight: bold;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -53,7 +53,7 @@ p,
 summary,
 i {
   width: 100%;
-  font-size: calc(var(--base-font-size) + 2pt);
+  font-size: calc(12pt + 2pt);
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: left;
@@ -68,7 +68,7 @@ ul {
 }
 
 li {
-  font-size: calc(var(--base-font-size) + 2pt);
+  font-size: calc(12pt + 2pt);
 }
 
 #progress-bar {
@@ -104,16 +104,16 @@ a {
   h4,
   h5,
   h6 {
-    font-size: calc(var(--base-font-size) + 8pt);
+    font-size: calc(12pt + 8pt);
   }
 
   p,
   i {
-    font-size: calc(var(--base-font-size) + 2pt);
+    font-size: calc(12pt + 2pt);
   }
 
   li {
-    font-size: calc(var(--base-font-size) + 2pt);
+    font-size: calc(12pt + 2pt);
   }
 
   body {
@@ -235,7 +235,7 @@ a {
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: calc(var(--base-font-size) + 2pt);
+  font-size: calc(12pt + 2pt);
 }
 
 .chip {
@@ -248,7 +248,7 @@ a {
   background-color: #ffffff26;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 2px;
-  font-size: calc(var(--base-font-size) - 0pt);
+  font-size: calc(12pt - 0pt);
 }
 
 
@@ -302,11 +302,11 @@ a {
   background-color: #00000000;
   text-align: center;
   cursor: pointer;
-  font-size: var(--base-font-size);
+  font-size: 12pt;
   color: inherit;
   font-family: 'Times New Roman', Times, serif;
 }
 
 #toggleButton:hover {
   background-color: #74747462;
-} 
+}
