@@ -1,8 +1,7 @@
 :root { 
   --bg-color: white;
   --text-color: black;
-  --font-family: Times New Roman, 'Times New Roman', Times, serif, sans-serif, Arial;
-  --base-font-size: 12pt;
+  --font-family: Times New Roman, 'Times New Roman', Times, serif, sans-serif, Arial; 
 }
 
 
@@ -92,7 +91,6 @@ a {
 }
 
 @media (max-width: 1080px) {
- 
 
   body {
     max-width: none;
