@@ -36,7 +36,6 @@ h5,
 h6,
 details,
 summary {
-  font-size: calc(12pt + 8pt);
   font-weight: bold;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -53,7 +52,6 @@ p,
 summary,
 i {
   width: 100%;
-  font-size: calc(12pt + 2pt);
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: left;
@@ -66,10 +64,7 @@ ul {
   margin-bottom: 1em;
   width: 100%;
 }
-
-li {
-  font-size: calc(12pt + 2pt);
-}
+ 
 
 #progress-bar {
   height: 7.5px;
@@ -97,24 +92,7 @@ a {
 }
 
 @media (max-width: 1080px) {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: calc(12pt + 8pt);
-  }
-
-  p,
-  i {
-    font-size: calc(12pt + 2pt);
-  }
-
-  li {
-    font-size: calc(12pt + 2pt);
-  }
+ 
 
   body {
     max-width: none;
@@ -175,8 +153,7 @@ a {
   padding: 2px;
   border-radius: 1px;
   z-index: 1;
-  margin-top: -20px;
-  font-size: 12pt
+  margin-top: -20px; 
 }
 
 .item:hover .tooltip {
@@ -234,8 +211,7 @@ a {
 .card-content {
   padding: 10px;
   margin-left: 10px;
-  margin-right: 10px;
-  font-size: calc(12pt + 2pt);
+  margin-right: 10px; 
 }
 
 .chip {
@@ -247,8 +223,7 @@ a {
   border-radius: 5px;
   background-color: #ffffff26;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 2px;
-  font-size: calc(12pt - 0pt);
+  margin-top: 2px; 
 }
 
 
@@ -301,8 +276,7 @@ a {
   box-sizing: border-box;
   background-color: #00000000;
   text-align: center;
-  cursor: pointer;
-  font-size: 12pt;
+  cursor: pointer; 
   color: inherit;
   font-family: 'Times New Roman', Times, serif;
 }
