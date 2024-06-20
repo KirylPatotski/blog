@@ -5,11 +5,84 @@
   <title>404</title>
   <link rel="icon" href="icon.png" type="image/x-icon">
   <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <style>
+    :root {
+      --bg-color: white;
+      --text-color: black;
+      --font-family: Times New Roman, 'Times New Roman', Times, serif, sans-serif, Arial;
+      --base-font-size: 16px;
+    }
  
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: black;
+        --text-color: white;
+      }
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-family);
+      max-width: 14cm;
+      margin: 0 auto;
+      padding: 0 1cm;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 256px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: calc(var(--base-font-size) + 8px);
+      font-weight: bold;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      width: 100%;
+    }
+  
+    p, 
+    i {
+      width: 100%;
+      font-size: calc(var(--base-font-size) + 2px);
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-align: justify;
+    }
+   
+    @media (max-width: 1080px) {
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: calc(var(--base-font-size) + 8px);
+      }
+
+      p,
+      i {
+        font-size: calc(var(--base-font-size) + 6px);
+      }
+ 
+      body {
+        max-width: none;
+        margin: 16px;
+        padding: 0.5cm;
+      }
+    }
+  </style>
 
 
 
