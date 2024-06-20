@@ -2,7 +2,7 @@
   --bg-color: white;
   --text-color: black;
   --font-family: Times New Roman, 'Times New Roman', Times, serif, sans-serif, Arial;
-  --base-font-size: 0.4cm;
+  --base-font-size: 12pt;
 }
 
 
@@ -19,6 +19,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-family);
+  font-size: var(--base-font-size);
   max-width: 14cm;
   margin: 0 auto;
   padding: 0 1cm;
