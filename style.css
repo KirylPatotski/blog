@@ -1,7 +1,8 @@
 :root { 
   --bg-color: white;
   --text-color: black;
-  --font-family: Times New Roman, 'Times New Roman', Times, serif, sans-serif, Arial; 
+  --font-family: Times New Roman, 'Times New Roman', Times, serif, sans-serif, Arial;
+  --base-font-size: 12pt;
 }
 
 
@@ -35,6 +36,7 @@ h5,
 h6,
 details,
 summary {
+  font-size: calc(var(--base-font-size) + 8pt);
   font-weight: bold;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -51,6 +53,7 @@ p,
 summary,
 i {
   width: 100%;
+  font-size: calc(var(--base-font-size) + 2pt);
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: left;
@@ -63,7 +66,10 @@ ul {
   margin-bottom: 1em;
   width: 100%;
 }
- 
+
+li {
+  font-size: calc(var(--base-font-size) + 2pt);
+}
 
 #progress-bar {
   height: 7.5px;
@@ -91,6 +97,24 @@ a {
 }
 
 @media (max-width: 1080px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: calc(var(--base-font-size) + 8pt);
+  }
+
+  p,
+  i {
+    font-size: calc(var(--base-font-size) + 2pt);
+  }
+
+  li {
+    font-size: calc(var(--base-font-size) + 2pt);
+  }
 
   body {
     max-width: none;
@@ -151,7 +175,8 @@ a {
   padding: 2px;
   border-radius: 1px;
   z-index: 1;
-  margin-top: -20px; 
+  margin-top: -20px;
+  font-size: 12pt
 }
 
 .item:hover .tooltip {
@@ -209,7 +234,8 @@ a {
 .card-content {
   padding: 10px;
   margin-left: 10px;
-  margin-right: 10px; 
+  margin-right: 10px;
+  font-size: calc(var(--base-font-size) + 2pt);
 }
 
 .chip {
@@ -221,7 +247,8 @@ a {
   border-radius: 5px;
   background-color: #ffffff26;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 2px; 
+  margin-top: 2px;
+  font-size: calc(var(--base-font-size) - 0pt);
 }
 
 
@@ -274,11 +301,12 @@ a {
   box-sizing: border-box;
   background-color: #00000000;
   text-align: center;
-  cursor: pointer; 
+  cursor: pointer;
+  font-size: var(--base-font-size);
   color: inherit;
   font-family: 'Times New Roman', Times, serif;
 }
 
 #toggleButton:hover {
   background-color: #74747462;
-}
+} 
