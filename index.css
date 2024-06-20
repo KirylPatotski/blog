@@ -21,7 +21,7 @@ li {
 
 a span {
   display: none;
-  font-size: 14px;
+  font-size: 0.4cm;
 }
 
 li:hover a span {
