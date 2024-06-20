@@ -19,6 +19,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-family);  
+  font-size: 120%;
   max-width: 14cm;
   margin: 0 auto;
   padding: 0 1cm;
